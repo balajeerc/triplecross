@@ -1,10 +1,6 @@
 {
-  "extends": [
-    "airbnb",
-    "prettier"
-  ],
-  "plugins": [
-  ],
+  "extends": ["airbnb"],
+  "plugins": [],
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
@@ -15,6 +11,5 @@
     "es6": true,
     "node": true
   },
-  "rules": {
-  }
+  "rules": {}
 }
