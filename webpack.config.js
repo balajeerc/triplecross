@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/frontend/index.jsx',
   devtool: 'cheap-eval-src-map',
   output: {
     filename: 'bundle.js',
@@ -9,6 +9,7 @@ module.exports = {
   },
   devServer: {
     publicPath: '/dist/',
+    historyApiFallback: true,
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
