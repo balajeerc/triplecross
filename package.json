@@ -16,6 +16,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.0.5",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.1",
     "eslint": "^4.8.0",
@@ -35,7 +36,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --hot",
-    "test": "NODE_ENV=test node_modules/.bin/jest",
+    "test": "cross-env NODE_ENV=test node_modules/.bin/jest",
     "test:updateSnapshot": "NODE_ENV=test node_modules/.bin/jest -u"
   },
   "dependencies": {
