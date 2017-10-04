@@ -1,9 +1,13 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import HomePage from './index';
 
+beforeAll(() => {
+  Enzyme.configure({ adapter: new Adapter() });
+});
+
 test('Homepage component renders correctly', () => {
-  const component = renderer.create(<HomePage />);
-  const tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+  const component = Enzyme.shallow(<HomePage />);
+  expect(component).toMatchSnapshot();
 });

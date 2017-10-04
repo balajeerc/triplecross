@@ -1,9 +1,13 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import PageNotFound from './index';
 
+beforeAll(() => {
+  Enzyme.configure({ adapter: new Adapter() });
+});
+
 test('PageNotFound component renders correctly', () => {
-  const component = renderer.create(<PageNotFound />);
-  const tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+  const component = Enzyme.shallow(<PageNotFound />);
+  expect(component).toMatchSnapshot();
 });
