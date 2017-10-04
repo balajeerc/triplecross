@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const PageNotFound = () => (
   <div>
@@ -7,7 +6,7 @@ const PageNotFound = () => (
     <br />
     <h4>
       Nothing to see here really. Would you like to back to{' '}
-      <Link to={'/'}>home page</Link>?
+      <a href="/">home page</a>?
     </h4>
   </div>
 );

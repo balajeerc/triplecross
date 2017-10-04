@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import PageNotFound from './components/generic/pageNotFound/pageNotFound';
-import MainPage from './components/homePage/homePage';
+import PageNotFound from './components/generic/pageNotFound/index';
+import MainPage from './components/homePage/index';
 
 const App = () => (
   <BrowserRouter>
