@@ -37,7 +37,8 @@
   "scripts": {
     "dev": "webpack-dev-server --hot",
     "test": "cross-env NODE_ENV=test node_modules/.bin/jest",
-    "test:updateSnapshot": "NODE_ENV=test node_modules/.bin/jest -u"
+    "test:updateSnapshot": "cross-env NODE_ENV=test node_modules/.bin/jest -u",
+    "test:coverage": "cross-env NODE_ENV=test node_modules/.bin/jest --coverage"
   },
   "dependencies": {
     "react": "^16.0.0",
