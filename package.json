@@ -13,6 +13,7 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
@@ -41,10 +42,16 @@
     "test:coverage": "cross-env NODE_ENV=test node_modules/.bin/jest --coverage"
   },
   "dependencies": {
+    "history": "^4.7.2",
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-router-redux": "next",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
     "styled-components": "^2.2.0"
   }
 }
