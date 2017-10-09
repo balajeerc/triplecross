@@ -2,9 +2,9 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter, push } from 'react-router-redux';
-import PageNotFound from '../../components/generic/pageNotFound/index';
-import MainPage from '../../components/homePage/index';
-import store, { history } from '../../store';
+import PageNotFound from 'frontend/components/generic/pageNotFound/index';
+import MainPage from 'frontend/components/homePage/index';
+import store, { history } from 'frontend/store';
 
 const navigateBackToHome = () => {
   store.dispatch(push('/'));
